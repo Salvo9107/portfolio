@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/main4.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style_layout8.css">
+    <title>Layout Exercise 8</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="sticky">
+        <nav class="navbar">
+            <div class="logo"><a href="#">LOGO NAME</a></div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">SIDEBAR-LOGO</span>
+                    <!-- <i class="bx bx-x"></i> -->
+                </div>
+                <ul class="links">
+                    <li>
+                        <div class="links-header">
+                            <i class='bx bx-home'></i>
+                            <a href="#">HOME</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-header">
+                            <i class='bx bxs-face'></i>
+                            <a href="#intro">ABOUT ME</a>
+                        </div>
+                    </li>
+                    <li class="sub-menu-projx">
+                        <div class="links-header">
+                            <i class='bx bx-briefcase-alt'></i>
+                            <a href="#">PROJECTS</a>
+                            <i class="bx bxs-chevron-up arrow projx-arrow"></i>
+                        </div>
+                        <ul class="sub-menu sub-menu-projx-ul">
+                            <li><a href="#">Connect Four</a></li>
+                            <li><a href="#">Rock, Paper, Scissors</a></li>
+                            <li><a href="#">Tic-Tac-Toe</a></li>
+                            <li><a href="#">Chess</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- COVER -->
+    <div id="cover">
+        <div class="img-class"></div>
+    </div>
+    <!-- MAIN -->
+    <main>
+        <section id="intro">
+            <h2>I'am GLAD you scrolled down</h2>
+            <p>Hi, my name is Salvatore.<br>
+            Since the beginning of the pandemic I decided to learn web-design / web-development (HTML, CSS, JAVASCRIPT).<br>
+            Even though I'am still at the beginning, I'am very happy to show you what I've accomplished so far.<br>
+            Scrolling down you will see four of what I believe can be called "intermediate" project.<br>
+            Have fun with playing these "games"!</p>
+            <p></p>
+            <div id="intro-img-container">
+                <img id="intro-img-one" src="/img/html5-3384014.png" alt="html-logo">
+                <img id="intro-img-two" src="/img/css.jpg" alt="css-logo">
+                <img id="intro-img-three" src="/img/javascript-736400.png" alt="javascript-logo">
+            </div>
+        </section>
+        
+        <section id="container-grid">
+            <div id= "p1" class="project">
+                <img id="p-img-three" class="img">
+                <h3>PROJECT NR.1</h3>
+                <h4>Connect four</h4>
+                <button id="b1" class="btn btn-primary">VIEW PROJECT</button>
+            </div>
+            <!-- <button id="b1" class="btn btn-primary">VIEW PROJECT</button> -->
+            <div class="project">
+                <img id="p-img-one" class="img" href="/projx/rock_paper_scissors/index_RockPaperScissors.html">
+                <h3>PROJECT NR.2</h3>
+                <h4>Rock, Paper, Scissors</h4>            
+                <button id="b2" class="btn btn-primary">VIEW PROJECT</button>
+            </div>
+            <div class="project">
+                <img id="p-img-four" class="img" href="/projx/tictactoe/index_tictactoe.html">
+                <h3>PROJECT NR.3</h3>
+                <h4>Tic-Tac-Toe</h4>
+                <button id="b3" class="btn btn-primary">VIEW PROJECT</button>
+            </div>
+            <div class="project">
+                <img id="p-img-two" class="img" href="/projx/chess/index_chess.html">
+                <h3>PROJECT NR.4</h3>
+                <h4>Chess</h4>
+                <button id="b4" class="btn btn-primary">VIEW PROJECT</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>Made 2022 by Salvatore Marotta<br></p>
+    </footer>
+</body>
+</html>
