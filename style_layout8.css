@@ -854,7 +854,7 @@ footer{
     #cover > .img-class{
         height: 93vh;
         width: 100vw; 
-        background-image: url(/img/software-developer-6521720.jpg);
+        background-image: url(img/software-developer-6521720.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -999,17 +999,17 @@ footer{
     }
     
     #p-img-one{
-        background-image: url(/img/rock-paper-scissors-156171.png);
+        background-image: url(img/rock-paper-scissors-156171.png);
     }
     #p-img-two{
-        background-image: url(/img/chessboardImg_icon.png);
+        background-image: url(img/chessboardImg_icon.png);
         background-size: contain;
     }
     #p-img-three{
-        background-image: url(/img/connect4_icon.png);
+        background-image: url(img/connect4_icon.png);
     }
     #p-img-four{
-        background-image: url(/img/tictactoe_icon.png);
+        background-image: url(img/tictactoe_icon.png);
     }
 
     main button{
