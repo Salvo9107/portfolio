@@ -851,7 +851,7 @@ footer{
         position: relative;
     }
 
-    #cover > .img-class{
+    .img-class{
         height: 93vh;
         width: 100vw; 
         background-image: url(img/rock-paper-scissors-156171.png);
