@@ -7,20 +7,20 @@
 const PIECES = {
     id : {
         //BLACK (-b)
-        'tb': "url('/chessPieces/black/tb.png')", // t-turm
-        'sb': "url('/chessPieces/black/sb.png')", // s-springer
-        'lb': "url('/chessPieces/black/lb.png')", // l-läufer
-        'db': "url('/chessPieces/black/db.png')", // d-dame
-        'kb': "url('/chessPieces/black/kb.png')", // k-könig
-        'bb': "url('/chessPieces/black/bb.png')", // b-bauer
+        'tb': "url('chessPieces/black/tb.png')", // t-turm
+        'sb': "url('chessPieces/black/sb.png')", // s-springer
+        'lb': "url('chessPieces/black/lb.png')", // l-läufer
+        'db': "url('chessPieces/black/db.png')", // d-dame
+        'kb': "url('chessPieces/black/kb.png')", // k-könig
+        'bb': "url('chessPieces/black/bb.png')", // b-bauer
     
         //WHITE (-w)
-        'tw': "url('/chessPieces/white/tw.png')",
-        'sw': "url('/chessPieces/white/sw.png')",
-        'lw': "url('/chessPieces/white/lw.png')",
-        'dw': "url('/chessPieces/white/qw.png')",
-        'kw': "url('/chessPieces/white/kw.png')",
-        'pw': "url('/chessPieces/white/pw.png')", // p-pawn
+        'tw': "url('chessPieces/white/tw.png')",
+        'sw': "url('chessPieces/white/sw.png')",
+        'lw': "url('chessPieces/white/lw.png')",
+        'dw': "url('chessPieces/white/qw.png')",
+        'kw': "url('chessPieces/white/kw.png')",
+        'pw': "url('chessPieces/white/pw.png')", // p-pawn
         '': '',
     },
     countTurnsForEnpassant: 0,
