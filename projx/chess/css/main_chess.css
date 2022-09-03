@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 1.50rem;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-title-board{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 832px){
+    .container-board-btn{
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 833px){
+    .container-board-btn{
+        height: 100%;
+        width: 100%;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+    }
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#board{
+    height:100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(8, 9vmin);
+    grid-template-rows: repeat(8, 9vmin);
+    grid-gap: 0;
+    justify-content: center;
+
+    /* border: 1px solid black; */
+}
+
+div{
+    font-size: 7vmin;
+    font-weight: 800;
+    background-size: contain;
+    text-align: center;
+    cursor:crosshair;
+}
+
+#board > div{
+    border-radius: 2.5%;
+    border: .04vmin solid grey;
+}
+
+.odd:nth-child(odd){
+  background-color: #66391f;
+
+}
+
+.even:nth-child(even){
+    background-color: #66391f;
+}
+
+.even:nth-child(2n+1){
+    background-color: #ffffff;
+}
+
+.odd:nth-child(2n+2){
+    background-color: #ffffff;
+}
+
+button{
+    margin: 30px;
+    height: 35px;
+    width: 100px;
+    /* visibility: hidden; */
+}
+
+#board > .select{
+    background-color: rgb(255, 230, 0);
+}
+/* .even:hover, .odd:hover{
+    background-color: rgb(237, 255, 71);
+} */
+
+#board > .move-possibilities{
+    background-color: #babb73;
+    /* border: .25vmin solid rgb(248, 250, 109); */
+}
+
+#board > .obstacle{
+    background-color: rgb(185, 34, 34);
+}
+
+#board > .attac{
+    border: .5vmin solid rgb(16, 192, 0);
+}
