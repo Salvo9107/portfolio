@@ -1352,8 +1352,8 @@ const PIECES = {
     },
     arrAttacTakenSqr_WHITE: function(arrDivs){
         for(let i of arrDivs){
-            console.log('i',i.getAttribute('style')[43],i.getAttribute('style'));
-            let pieceColor = i.getAttribute('style')[43];
+            console.log('i',i.getAttribute('style')[42],i.getAttribute('style'));
+            let pieceColor = i.getAttribute('style')[42];
             if(pieceColor === 'b'){
                 return PIECES.arrPossibleAttacs.push(i.id);
             } else if(pieceColor === 'w'){
@@ -1363,7 +1363,7 @@ const PIECES = {
     },
     arrAttacTakenSqr_BLACK: function(arrDivs){
         for(let i of arrDivs){
-            let pieceColor = i.getAttribute('style')[43];
+            let pieceColor = i.getAttribute('style')[42];
             if(pieceColor === 'w'){
                 return PIECES.arrPossibleAttacs.push(i.id);
             } else if(pieceColor === 'b'){
@@ -1526,7 +1526,7 @@ const PIECES = {
                 // console.log(i.getAttribute('style'));
                 if(i.style[0] === 'background-image'){
                     console.log('i',i.getAttribute('style'));
-                    let pieceColor = i.getAttribute('style')[43];
+                    let pieceColor = i.getAttribute('style')[42];
                     // console.log(pieceColor);
                     if(pieceColor === 'w'){
                         return PIECES.arrPossibleAttacs.push(i.id);
@@ -1667,10 +1667,9 @@ const PIECES = {
             console.log(arrDivs);
             for(let i of arrDivs){
                 // console.log('i',i.getAttribute('style')[43]);
-                // console.log('i',i.getAttribute('style')[54]);
                 // console.log('i',i.id);
-                console.log(i.getAttribute('style')[43] === 'b');
-                if(i.getAttribute('style')[43] === 'b'){
+                console.log(i.getAttribute('style')[42] === 'b');
+                if(i.getAttribute('style')[42] === 'b'){
                     return PIECES.arrPossibleAttacs.push(i.id);
                 } else if(i.getAttribute('style')[54] === 'b'){
                     // i.removeAttribute('style');
@@ -1863,8 +1862,10 @@ const PIECES = {
                 if(!i.hasAttribute('style')){
                     PIECES.arrPossibleMoves.push(i.id);
                 // solution: remove 'style' attribute after move any piece
-                } else if (!i.hasAttribute('style') && !i.getAttribute('style').length){
+                } else if (i.hasAttribute('style') && !i.getAttribute('style').length){
                     i.removeAttribute('style');
+                    console.log(i,'has Attribute style?',!i.hasAttribute('style'));
+                    PIECES.arrPossibleMoves.push(i.id);
                 }
             }
         },
@@ -1908,8 +1909,8 @@ const PIECES = {
         arrAttacTakenSqr: function(arrDivs){
             arrDivs.forEach((div) => {
                 if(div.hasAttribute('style')){
-                    console.log('div',div.getAttribute('style')[43]);
-                    let pieceColor = div.getAttribute('style')[43];
+                    console.log('div',div.getAttribute('style')[42]);
+                    let pieceColor = div.getAttribute('style')[42];
                     if(pieceColor === 'w'){
                         PIECES.arrPossibleAttacs.push(div.id);
                     } else {
@@ -1988,8 +1989,10 @@ const PIECES = {
                 if(!i.hasAttribute('style')){
                     PIECES.arrPossibleMoves.push(i.id);
                 // solution: remove 'style' attribute after move any piece
-                } else if (!i.hasAttribute('style') && !i.getAttribute('style').length){
+                } else if (i.hasAttribute('style') && !i.getAttribute('style').length){
                     i.removeAttribute('style');
+                    console.log(i,'has Attribute style?',!i.hasAttribute('style'));
+                    PIECES.arrPossibleMoves.push(i.id);
                 }
             }
         },
@@ -2032,9 +2035,10 @@ const PIECES = {
         },
         arrAttacTakenSqr: function(arrDivs){
             arrDivs.forEach((div) => {
-                console.log('div',div.getAttribute('style'));
+                console.log('div', div, div.getAttribute('style'));
                 if(div.hasAttribute('style')){
-                    let pieceColor = div.getAttribute('style')[43];
+                    let pieceColor = div.getAttribute('style')[42];
+                    console.log('div.getAttribute = ', pieceColor);
                     if(pieceColor === 'b'){
                         PIECES.arrPossibleAttacs.push(div.id);
                     } else {
