@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transform: scale(0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+header{
+    font-size: 6vmin;
+    letter-spacing: 1vmin;
+    color: lightslategray;
+}
+
+h1{
+    font-size: 7vmin;
+    color: rgb(56, 56, 56);
+}
+
+h2{
+    font-size: 5vmin;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    gap: 1vmin;
+}
+
+#board > div{
+    border-radius: 10%;
+    border: .04vmin solid grey;
+}
+
+#board > div:hover{
+    transform: scale(0.95);
+    transition: all 0.2s ease-in;
+    border-color: rgb(0, 4, 228);
+}
+
+button{
+    margin-top: 7vmin;
+    height: 7vmin;
+    width: 60vmin;
+    font-size: 3.5vmin;
+}

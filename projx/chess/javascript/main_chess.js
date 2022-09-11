@@ -2622,8 +2622,8 @@ function init(){
     ];
     turn = -1;
     winner = null;
-    // inputName1 = prompt('PLAYER 1, Please enter your name here');
-    // inputName2 = prompt('PLAYER 2, Please enter your name here');
+    inputName1 = prompt('PLAYER 1, Please enter your name here');
+    inputName2 = prompt('PLAYER 2, Please enter your name here');
     setPlayerName(inputName1, inputName2);
     render();
 }
